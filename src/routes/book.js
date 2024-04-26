@@ -4,7 +4,7 @@ export default async function Books(app, options){
 
     const books = app.mongo.db.collection('books');
 
-    app.get('/bookss', async (req, rep) => {
+    app.get('/books', async (req, rep) => {
         return await books.find().toArray();
     });
 

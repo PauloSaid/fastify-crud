@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js",
-    "test": "c8 node --test --test-reporter=spec test.js"
+    "dev": "nodemon src/server.js",
+    "test": "c8 node --test --test-reporter=spec src/test.js"
   },
   "type": "module",
   "author": "",
@@ -18,7 +18,8 @@
     "c8": "^9.1.0",
     "close-with-grace": "^1.3.0",
     "dotenv": "^16.4.5",
-    "fastify": "^4.26.1"
+    "fastify": "^4.26.1",
+    "mongodb": "^6.5.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.0",
