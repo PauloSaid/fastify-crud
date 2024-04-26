@@ -17,7 +17,7 @@ O programa em si gira em torno de um CRUD de uma livraria/biblioteca.
 
 
 # **2. Funcionamento**
-Para "rodar" o projeto, os seguintes passos devem ser seguidos:
+Para "rodar" o projeto, abra seu terminal e siga os seguintes passos:
 
 1. Download do programa
 ```git
