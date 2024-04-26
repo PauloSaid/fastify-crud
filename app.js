@@ -1,8 +1,4 @@
 import fastify from 'fastify';
-import createError from '@fastify/error';
-import autoload from '@fastify/autoload';
-import mongodb from '@fastify/mongodb';
-import jwt from '@fastify/jwt';
 import { fileURLToPath } from 'url';
 import path from 'path';
 import dotenv from 'dotenv';
@@ -16,4 +12,13 @@ export const options = {
     logger: process.env.STAGE === 'dev' ? { transport : { target: 'pino-pretty'} } : false,
     jwt_secret: process.env.JWT_SECRET,
     db_url: process.env.DB_URL
+};
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+export async function build(opts) {
+    const app = fastify(opts);
+
+    return app;
 }

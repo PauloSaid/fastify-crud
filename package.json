@@ -1,23 +1,15 @@
 {
   "name": "fastify-crud",
   "version": "1.0.0",
-  "description": "web project uvv 2",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon server.js",
     "test": "c8 node --test --test-reporter=spec test.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PauloSaid/fastify-crud.git"
-  },
-  "keywords": [],
+  "type": "module",
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/PauloSaid/fastify-crud/issues"
-  },
-  "homepage": "https://github.com/PauloSaid/fastify-crud#readme",
   "dependencies": {
     "@fastify/autoload": "^5.8.0",
     "@fastify/error": "^3.4.1",
@@ -26,8 +18,10 @@
     "c8": "^9.1.0",
     "close-with-grace": "^1.3.0",
     "dotenv": "^16.4.5",
-    "fastify": "^4.26.2",
+    "fastify": "^4.26.1"
+  },
+  "devDependencies": {
     "nodemon": "^3.1.0",
-    "pino-pretty": "^11.0.0"
+    "pino-pretty": "^10.3.1"
   }
 }
